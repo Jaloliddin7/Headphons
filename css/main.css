@@ -62,8 +62,6 @@ body{
     line-height: 1.5;
     color: var(--black-text-color);
     background-color: var(--white-bg-color);
-    transition: all .5s ease-in-out;
-    /* padding: 80px; */
 }
 .conteiner{
     width: min(100%,1180px);
@@ -78,31 +76,49 @@ body{
 .main{
     flex-grow: 1;
 }
-.dakr-mode{
-    --black-text-color: #fff; 
-    --white-text-color:#222;
-    --black-color: #fff;
-    --white-color: #222;
-    
-    --white-bg-color:#000;
-    --gray-bg-color:#414141;
 
-}
-.button{
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    width: 50px;
-    height: 50px;
-}
-.button svg path{
-    fill: var(--black-text-color);
-}
-.button svg {
-    width: 40px;
-    height: 40px;
-}
 /* HEADER */
+.header{
+    padding: 3.4rem 0 10rem;
+    background-image: linear-gradient(74.79deg, #FF9292 -7.33%, #DE5150 90.21%);
+}
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-logo{
+    display: flex;
+}
+.header-top__nav{
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+.header-top__nav span{
+    width: 2px;
+    height: 47px;
+    background-color: var(--white-bg-color);
+    opacity: 0.5;
+}
+.smoll-nav{
+    width: 100%;
+    margin-top: 4rem;
+    display: none;
+}
+.header-top__link{
+    width: 47px;
+    height: 47px;
+    background-color: var(--white-bg-color);
+    display: grid;
+    place-items: center ;
+    border-radius: 50%;
+}
+.burger-btn{
+    cursor: pointer;
+}
 
 /* HEADER END */
 
@@ -115,3 +131,27 @@ body{
 
 /* FOOTER END */
 
+/* RESPONSIVE */
+ /* X-Small devices (portrait phones, less than 576px) */
+@media  (max-width: 575.98px) { 
+    .desktop-nav{
+        display: none;
+    }
+    .smoll-nav{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { ... }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { ... }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { ... }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { ... }
+/* RESPONSIVE END */
