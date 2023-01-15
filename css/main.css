@@ -39,34 +39,44 @@
 /* google fonts */
 :root{
     /* colors */
-    --black-text-color: #070707;
-    --white-text-color: #fff;
-    --gray-text-color: #828282;
+    --black-text-color: #180202;
+    --primary-color: #ff4948;
     --black-color: #000;
     --white-color: #fff;
     
     /* background colors */
+    --footer-bg-color:#E86564;
     --white-bg-color:#fff;
-    --gray-bg-color:#F6F6F6;
+    --black-bg-color:#F6F6F6;
 
     /* FONTS  */
-    --site-fonts: "Gilroy-Bold", "Arial", sans-serif;
+    --site-fonts: 'Rubik', "Arial", sans-serif;
 
 }
 body{
+    display: flex;
+    flex-direction: column;
     font-family: var(--site-fonts);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
     color: var(--black-text-color);
     background-color: var(--white-bg-color);
     transition: all .5s ease-in-out;
     /* padding: 80px; */
 }
 .conteiner{
-    width: min(100%,983px);
+    width: min(100%,1180px);
     margin: 0 auto;
-    padding: 0px 20px; 
+    padding: 0px 1.5rem; 
+}
+.title{
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.2;
+}
+.main{
+    flex-grow: 1;
 }
 .dakr-mode{
     --black-text-color: #fff; 
