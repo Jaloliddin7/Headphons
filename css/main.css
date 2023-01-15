@@ -1,0 +1,107 @@
+/* google fonts */
+/* rubik-regular - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/rubik-v23-latin-regular.woff2') format('woff2'),
+         url('../fonts/rubik-v23-latin-regular.woff') format('woff'); 
+  }
+  /* rubik-500 - latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/rubik-v23-latin-500.woff2') format('woff2'), 
+         url('../fonts/rubik-v23-latin-500.woff') format('woff'); 
+  }
+  /* rubik-700 - latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/rubik-v23-latin-700.woff2') format('woff2'),
+         url('../fonts/rubik-v23-latin-700.woff') format('woff'); 
+  }
+  /* rubik-900 - latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/rubik-v23-latin-900.woff2') format('woff2'), 
+         url('../fonts/rubik-v23-latin-900.woff') format('woff'); 
+  }
+
+/* google fonts */
+:root{
+    /* colors */
+    --black-text-color: #070707;
+    --white-text-color: #fff;
+    --gray-text-color: #828282;
+    --black-color: #000;
+    --white-color: #fff;
+    
+    /* background colors */
+    --white-bg-color:#fff;
+    --gray-bg-color:#F6F6F6;
+
+    /* FONTS  */
+    --site-fonts: "Gilroy-Bold", "Arial", sans-serif;
+
+}
+body{
+    font-family: var(--site-fonts);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black-text-color);
+    background-color: var(--white-bg-color);
+    transition: all .5s ease-in-out;
+    /* padding: 80px; */
+}
+.conteiner{
+    width: min(100%,983px);
+    margin: 0 auto;
+    padding: 0px 20px; 
+}
+.dakr-mode{
+    --black-text-color: #fff; 
+    --white-text-color:#222;
+    --black-color: #fff;
+    --white-color: #222;
+    
+    --white-bg-color:#000;
+    --gray-bg-color:#414141;
+
+}
+.button{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+}
+.button svg path{
+    fill: var(--black-text-color);
+}
+.button svg {
+    width: 40px;
+    height: 40px;
+}
+/* HEADER */
+
+/* HEADER END */
+
+/* MAIN */
+
+
+/* INTRO */
+
+/* FOOTER */
+
+/* FOOTER END */
+
